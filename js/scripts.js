@@ -1,17 +1,12 @@
-var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
-var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
 
-var allNames = femaleNames.concat(maleNames);
+var animal = 'Zielone słonie';
+var animal = animal.toUpperCase();
 
-console.log (allNames);
+var textCharsAfter = text.replace('Papugi', animal);
+console.log(textCharsAfter);
 
-var newName='Marian' ;
+textCharsAfter = textCharsAfter.substr(0,textCharsAfter.length/2)
 
-if (allNames.indexOf(newName) === -1) {
-	var x=allNames.push(newName);
-	console.log (allNames);
-}
+console.log(textCharsAfter);
 
-femaleNames[4]='Marysia' ;
-
-console.log (femaleNames);
