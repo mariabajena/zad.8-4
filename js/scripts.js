@@ -1,6 +1,6 @@
 var a=3,
 	h=4,
-	triangleArea=1;
+	triangleArea; //nie musisz deklarować defaultowych wartości zmiennych
 
 triangleArea=a*h/2;
 
