@@ -6,7 +6,7 @@ function getTriangleArea(a, h) {
 		console.log('Nieprawidłowe dane');
 	}
 
-	else if (a>0 && h>0) {
+	else { //if (a>0 && h>0) ten warunekt jest niepotrzebny, przeciwny wypadek do (a<=0 || h<=0) oznacza to samo
 		return a*h/2;
 	}
 }
