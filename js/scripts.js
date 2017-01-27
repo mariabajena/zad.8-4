@@ -1,5 +1,6 @@
-var withButtonClass = document.getElementsByClassName('button');
+var add = document.getElementById('addElem'),
+	list = document.getElementById('Lista')
 
-for (var i=0; i<withButtonClass.length; i++) {
-	alert(withButtonClass[i].innerText);
-}
+add.addEventListener('click', function(e) {
+  list.innerHTML += '<li>' + 'item ' + document.getElementsByTagName('li').length + '</li>' ;
+});
