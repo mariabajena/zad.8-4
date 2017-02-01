@@ -13,6 +13,8 @@ img {
 ul {
 	width: 3000px;
 	height: 400px;
+	list-style-type: none;
+	padding: 0;
 }
 
 li {
