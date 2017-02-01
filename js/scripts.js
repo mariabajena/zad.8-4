@@ -1,18 +1,17 @@
-var span = $("span");
+var carouselList = $("#carousel ul");
 
-span.each(function(index, element) {
-  if(index % 2 == 0) {
-    $(element).css('color', 'red');
-  };
+$(function(){
+  setInterval(changeSlide, 3000);
 });
 
-var paragraphs = $('p');
+function changeSlide () {
+  carouselList.animate({'marginLeft':-600}, 500, moveFirstSlide);
+}
 
-paragraphs.each(function(index, element) {
-  var button = '<button class="btn" data-tmp="' + index + '">Click me</button>' ;
-  $(element).append(button);
-});
+function moveFirstSlide () {
+  var firstItem = carouselList.find("li:first");
+  var lastItem = carouselList.find("li:last");
+  lastItem.after(firstItem);
+  carouselList.css({marginLeft:0});
+}
 
-$("button").click(function(){
-  alert($(this).attr("data-tmp"));
-});

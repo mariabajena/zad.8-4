@@ -1,7 +1,23 @@
-.container {
-	padding: 20px;
+img {
+	height: 400px;
+	width: 600px;
 }
 
-#theWinnerIs {
-	padding-top: 50px;
+#carousel {
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+ul {
+	width: 3000px;
+	height: 400px;
+}
+
+li {
+	width: 600px;
+	height: 400px;
+	list-style-type: none;
+	float: left;
 }
